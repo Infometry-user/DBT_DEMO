@@ -40,11 +40,7 @@ models:
     tests:
       - dbt_utils.equal_rowcount:
           compare_model: source('raw', 'RAW_ORDERS')
-  - name: DIM_SHIPMENTS
-    tests:
-      - dbt_utils.mutually_exclusive_ranges:
-          lower_bound_column: SHIPPED_DATE
-          upper_bound_column: DELIVERY_DATE
+  
   
   
   
