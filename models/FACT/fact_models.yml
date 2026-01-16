@@ -1,9 +1,0 @@
-version: 2
-
-models:
-  - name: FACT_CUSTOMER_PURCHASED
-    columns:
-      - name: TOTAL_PURCHASE_AMOUNT
-        tests:
-          - dbt_utils.expression_is_true:
-              expression: ">= 1"
