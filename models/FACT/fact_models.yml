@@ -6,4 +6,4 @@ models:
       - name: TOTAL_PURCHASE_AMOUNT
         tests:
           - dbt_utils.expression_is_true:
-              expression: "<= 0"
+              expression: ">= 1"
